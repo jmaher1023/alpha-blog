@@ -17,14 +17,7 @@ $navbar-default-bg: #64A8CC;
 }
 
 .jumbotron {
-  background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),
-    /* bottom, image */
-    url(1.jpg);
+  background-image: asset-url('1.jpg');
   background-size: cover;
   background-repeat:none;
 }
