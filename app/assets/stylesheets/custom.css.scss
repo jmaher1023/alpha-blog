@@ -12,12 +12,22 @@ $navbar-default-bg: #64A8CC;
   color: #fff;
 }
 
+#caption {
+  color: #fff;
+  margin: 15px auto;
+}
+
+#sign-up {
+  margin: 15px auto;
+  padding: 15px;
+}
+
 .center {
   text-align: center;
 }
 
 .jumbotron {
-  background-image: asset-url('1.jpg');
+  background-image: asset-url('Blog.png');
   background-size: cover;
   background-repeat:none;
 }
@@ -27,6 +37,14 @@ $navbar-default-bg: #64A8CC;
   text-align: center;
   padding: 10px;
   font-weight: bold;
+}
+
+.trans-box {
+  background-color: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.4);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .article-meta-details {
