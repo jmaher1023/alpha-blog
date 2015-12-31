@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   before_action :require_same_user, only: [:edit, :update]
   
   def index
-    @users = User.paginate(page: params[:page], per_page: 5)
+    @users = User.paginate(page: params[:page], per_page: 9)
   end
   
   def new
@@ -14,8 +14,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "Hi #{@user.username}, welcome to the Alpha Blog!"
-      redirect_to articles_path
+      flash[:success] = "Hi #{@user.username}, welcome to the Alpha Blog! Please sign in to begin blogging."
+      redirect_to login_path
     else
       render 'new'
     end

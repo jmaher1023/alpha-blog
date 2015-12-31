@@ -83,8 +83,13 @@ $navbar-default-bg: #64A8CC;
 }
 
 .listing {
+  padding: 10px;
+  margin-bottom: -20px;
+}
+
+.listing  ul {
   list-style: none;
-  padding: 0;
+  padding: 0px;
 }
 
 
